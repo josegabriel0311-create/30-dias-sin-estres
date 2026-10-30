@@ -1,0 +1,21 @@
+3. .gitignore
+Mantiene tu repositorio limpio de carpetas del sistema operativo o logs temporales.
+
+# Dependencias y logs
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de entorno y despliegue
+.env
+.env.local
+.vercel
+dist/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.swp
+
