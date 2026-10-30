@@ -1,0 +1,22 @@
+2. package.json
+Define los metadatos del repositorio y scripts sencillos de vista previa local (opcionales) sin forzar herramientas pesadas de compilación.
+
+{
+  "name": "30-dias-sin-estres",
+  "version": "1.0.0",
+  "description": "Aplicación web móvil de 30 días para transformar el bienestar financiero con serenidad y micro-hábitos.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "finanzas-personales",
+    "habitos",
+    "salud-financiera",
+    "mobile-app",
+    "tailwind-css",
+    "mindful-money"
+  ],
+  "author": "Tu Nombre o Marca",
+  "license": "MIT"
+
