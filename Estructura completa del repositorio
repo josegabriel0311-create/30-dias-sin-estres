@@ -1,0 +1,12 @@
+Estructura completa del repositorio:
+30-dias-sin-estres/
+├── index.html            (Pantalla 1: Bienvenida - entregada en el turno anterior)
+├── situacion.html        (Pantalla 2: Mi situación - entregada)
+├── plan.html             (Pantalla 3: Tu plan de 30 días - entregada)
+├── progreso.html         (Pantalla 4: Progreso - entregada)
+├── cierre.html           (Pantalla 5: Cierre Día 30 - entregada)
+├── vercel.json           (Garantiza que Vercel no intente ejecutar Vite)
+├── package.json          (Información del proyecto y comandos)
+├── .gitignore            (Evita subir archivos innecesarios)
+├── LICENSE               (Licencia de código abierto MIT)
+└── README.md             (Documentación completa del proyecto)
