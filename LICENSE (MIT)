@@ -1,0 +1,102 @@
+4. LICENSE (MIT)
+MIT License
+
+Copyright (c) 2025 30 Días Sin Estrés
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+5. README.md
+El archivo de presentación para tu repositorio de GitHub, explicando el propósito, arquitectura y pasos de despliegue.
+
+# 🌿 30 Días Sin Estrés
+
+> **Recupera el control de tu dinero en 30 días.**  
+> Una experiencia móvil diseñada con un enfoque sereno y libre de culpas para construir hábitos financieros sostenibles, un día a la vez.
+
+---
+
+## ✨ Características y Flujo de Usuario
+
+El programa guía al usuario a través de un recorrido de 5 etapas conectadas:
+
+1. **`index.html` (Bienvenida):** Propuesta de valor clara y 3 pilares clave (*Ordena tus gastos*, *Ataca tus deudas*, *Mejores hábitos*).
+2. **`situacion.html` (Mi situación):** Diagnóstico inicial honesto en 5 minutos para registrar ingresos, gastos, deudas y preocupaciones sin juicios.
+3. **`plan.html` (Tu plan de 30 días):** Vista diaria de micro-acciones (5 minutos al día) con notas y seguimiento de etapas.
+4. **`progreso.html` (Progreso):** Gráfico circular de avance (12/30 días, 40%) y métricas tangibles de hábitos y gastos identificados.
+5. **`cierre.html` (Cierre del Día 30):** Hito de graduación, consolidación de hábitos y validación del sistema adquirido.
+
+---
+
+## 🎨 Especificaciones de Diseño
+
+- **Formato:** Optimizado para viewport móvil (`390px` centrado con soporte responsivo).
+- **Tipografía:** Sora (Google Fonts).
+- **Paleta de Color:**
+  - Fondo calmado: `#f1fbff` / `#e2f7ff`
+  - Marca Teal: `#0b7a7c`
+  - Botón de acción Coral: `#ff6b4a`
+  - Texto oscuro: `#0f2930`
+- **Estilos:** Tailwind CSS (cargado vía CDN de alto rendimiento).
+
+---
+
+## 🚀 Despliegue en Vercel (Paso a paso)
+
+Este repositorio está configurado como un sitio estático limpio. Para publicarlo sin problemas:
+
+1. **Clona o sube tus archivos a GitHub:**
+   ```bash
+   git init
+   git add .
+   git commit -m "feat: initial release 30 Días Sin Estrés"
+   git branch -M main
+   git remote add origin https://github.com/TU-USUARIO/30-dias-sin-estres.git
+   git push -u origin main
+   ```
+
+2. **Conecta en Vercel:**
+   - Inicia sesión en [Vercel](https://vercel.com).
+   - Haz clic en **"Add New..."** → **"Project"**.
+   - Selecciona tu repositorio de GitHub e importa.
+   - En **Framework Preset**, déjalo en **`Other`** (el archivo `vercel.json` se encargará de configurar el resto automáticamente).
+   - Haz clic en **Deploy**.
+
+¡Tu proyecto estará en línea en segundos!
+
+---
+
+## 💻 Ejecución Local
+
+Si deseas probar la navegación en tu máquina antes de subirla:
+
+```bash
+# Con Node.js instalado:
+npx serve .
+
+# O con Python:
+python3 -m http.server 8080
+```
+Abre tu navegador en `http://localhost:8080` (o el puerto indicado).
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia [MIT](LICENSE).
