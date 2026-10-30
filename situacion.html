@@ -1,0 +1,146 @@
+2. situacion.html (Mi situación)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi situación - 30 Días Sin Estrés</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Sora', 'sans-serif'] },
+          colors: {
+            brand: {
+              teal: '#0b7a7c',
+              lightTeal: '#e2f7ff',
+              bg: '#f1fbff',
+              coral: '#ff6b4a',
+              coralHover: '#f05b39',
+              dark: '#0f2930',
+              textMuted: '#4a656d'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-bg font-sans min-h-screen text-brand-dark flex justify-center items-start sm:py-8">
+  <main class="w-full max-w-[390px] min-h-screen bg-brand-bg flex flex-col p-6 shadow-sm">
+    <!-- Header -->
+    <header class="flex items-center justify-between pb-4 border-b border-slate-200/60 mb-5">
+      <a href="index.html" class="p-2 -ml-2 text-brand-dark hover:text-brand-teal">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+      </a>
+      <div class="text-center">
+        <p class="text-xs font-bold tracking-wider uppercase text-brand-dark">30 DÍAS SIN ESTRÉS</p>
+        <p class="text-[11px] text-brand-textMuted">Calm Diagnostic</p>
+      </div>
+      <div class="w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center text-xs font-semibold">
+        JP
+      </div>
+    </header>
+
+    <!-- Badges & Titular -->
+    <div class="space-y-2 mb-4">
+      <div class="flex items-center justify-between text-xs">
+        <span class="px-2.5 py-1 rounded-full bg-brand-lightTeal text-brand-teal font-semibold">🌿 Sin juicios, solo claridad</span>
+        <span class="text-brand-textMuted">⏱ Toma ~5 minutos</span>
+      </div>
+      <h1 class="text-2xl font-bold text-brand-dark pt-1">Tu punto de partida</h1>
+      <p class="text-xs text-brand-textMuted leading-relaxed">Una fotografía honesta de tu momento actual para acompañarte paso a paso.</p>
+      <!-- Progreso visual -->
+      <div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden mt-3">
+        <div class="bg-brand-teal h-full w-1/5 rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Mensaje de calma -->
+    <div class="bg-brand-lightTeal/60 border border-brand-teal/20 rounded-xl p-3.5 text-xs text-brand-dark flex items-start gap-2.5 mb-5">
+      <span class="text-base">🔄</span>
+      <p>Esta información es privada y exclusivamente tuya. No hay números correctos o incorrectos.</p>
+    </div>
+
+    <!-- Pasos -->
+    <div class="space-y-4 flex-1">
+      <!-- Paso 1 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+        <p class="text-[10px] font-bold tracking-wider uppercase text-brand-teal mb-1">PASO 1</p>
+        <h2 class="text-sm font-semibold text-brand-dark mb-1">¿Cuánto recibes aproximadamente al mes?</h2>
+        <p class="text-xs text-brand-textMuted mb-3">Suma tu sueldo neto, ingresos variables o aportes regulares.</p>
+        <div class="flex items-center justify-between bg-brand-lightTeal/40 rounded-xl px-3.5 py-2.5">
+          <input type="number" placeholder="0.00" class="bg-transparent text-lg font-bold text-brand-dark focus:outline-none w-2/3" />
+          <span class="text-xs text-brand-textMuted">€ / mes</span>
+        </div>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+        <p class="text-[10px] font-bold tracking-wider uppercase text-brand-teal mb-1">PASO 2</p>
+        <h2 class="text-sm font-semibold text-brand-dark mb-1">¿Cuánto gastas aproximadamente al mes?</h2>
+        <p class="text-xs text-brand-textMuted mb-3">Vivienda, comida, servicios, transporte y gastos del día a día.</p>
+        <div class="flex items-center justify-between bg-brand-lightTeal/40 rounded-xl px-3.5 py-2.5">
+          <input type="number" placeholder="0.00" class="bg-transparent text-lg font-bold text-brand-dark focus:outline-none w-2/3" />
+          <span class="text-xs text-brand-textMuted">€ / mes</span>
+        </div>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+        <p class="text-[10px] font-bold tracking-wider uppercase text-brand-teal mb-1">PASO 3</p>
+        <h2 class="text-sm font-semibold text-brand-dark mb-1">¿Cuánto debes actualmente?</h2>
+        <p class="text-xs text-brand-textMuted mb-3">Tarjetas de crédito, préstamos personales o compromisos pendientes.</p>
+        <div class="flex items-center justify-between bg-brand-lightTeal/40 rounded-xl px-3.5 py-2.5">
+          <input type="number" placeholder="0.00" class="bg-transparent text-lg font-bold text-brand-dark focus:outline-none w-2/3" />
+          <span class="text-xs text-brand-textMuted">€ total</span>
+        </div>
+      </div>
+
+      <!-- Paso 4 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+        <p class="text-[10px] font-bold tracking-wider uppercase text-brand-teal mb-1">PASO 4</p>
+        <h2 class="text-sm font-semibold text-brand-dark mb-1">¿Cuántas deudas tienes?</h2>
+        <p class="text-xs text-brand-textMuted mb-3">Número de entidades, tarjetas o personas a quienes debes.</p>
+        <div class="flex items-center justify-between bg-brand-lightTeal/40 rounded-xl px-4 py-2">
+          <button type="button" class="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center font-bold text-brand-dark">−</button>
+          <span class="text-sm font-bold text-brand-dark">1 <span class="font-normal text-xs text-brand-textMuted">compromiso</span></span>
+          <button type="button" class="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center font-bold text-brand-dark">+</button>
+        </div>
+      </div>
+
+      <!-- Paso 5 -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+        <p class="text-[10px] font-bold tracking-wider uppercase text-brand-teal mb-1">PASO 5</p>
+        <h2 class="text-sm font-semibold text-brand-dark mb-1">¿Qué es lo que más te preocupa?</h2>
+        <p class="text-xs text-brand-textMuted mb-3">Identificar la emoción es el primer paso para liberar la carga mental.</p>
+        <div class="space-y-2">
+          <label class="flex items-center gap-3 p-3 rounded-xl bg-brand-lightTeal/60 border border-brand-teal text-xs font-semibold cursor-pointer">
+            <input type="radio" name="worry" checked class="accent-brand-teal" />
+            <span>No llego a fin de mes.</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-xl bg-brand-lightTeal/20 hover:bg-brand-lightTeal/40 border border-transparent text-xs text-brand-dark cursor-pointer">
+            <input type="radio" name="worry" class="accent-brand-teal" />
+            <span>Gasto demasiado.</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-xl bg-brand-lightTeal/20 hover:bg-brand-lightTeal/40 border border-transparent text-xs text-brand-dark cursor-pointer">
+            <input type="radio" name="worry" class="accent-brand-teal" />
+            <span>Tengo demasiadas deudas.</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Inferior -->
+    <div class="pt-6 pb-2 text-center">
+      <a href="plan.html" class="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-brand-coral hover:bg-brand-coralHover text-white font-medium text-base shadow-md transition-all">
+        <span>Crear mi plan</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+      <p class="text-xs text-brand-textMuted mt-3">🤍 Tu ritmo, tus decisiones, cero culpas.</p>
+    </div>
+  </main>
+</body>
+</html>
