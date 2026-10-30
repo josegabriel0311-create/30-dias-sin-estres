@@ -1,5 +1,5 @@
 2. package.json
-Define los metadatos del repositorio y scripts sencillos de vista previa local (opcionales) sin forzar herramientas pesadas de compilación.
+
 
 {
   "name": "30-dias-sin-estres",
