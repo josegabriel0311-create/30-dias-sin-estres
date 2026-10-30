@@ -1,0 +1,116 @@
+5. cierre.html (Cierre del Día 30)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cierre del Día 30 - 30 Días Sin Estrés</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Sora', 'sans-serif'] },
+          colors: {
+            brand: {
+              teal: '#0b7a7c',
+              lightTeal: '#e2f7ff',
+              bg: '#f1fbff',
+              coral: '#ff6b4a',
+              coralHover: '#f05b39',
+              dark: '#0f2930',
+              textMuted: '#4a656d'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-bg font-sans min-h-screen text-brand-dark flex justify-center items-start sm:py-8">
+  <main class="w-full max-w-[390px] min-h-screen bg-brand-bg flex flex-col justify-between p-6 shadow-sm">
+    <div class="flex flex-col items-center pt-4 text-center">
+      <!-- Emblema de Graduación -->
+      <div class="w-24 h-24 mb-5 relative flex items-center justify-center">
+        <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+          <circle cx="50" cy="50" r="44" stroke="#cdeeff" stroke-width="4"/>
+          <circle cx="50" cy="50" r="34" stroke="#0b7a7c" stroke-width="5"/>
+          <path d="M50 24 A26 26 0 1 0 74 54" stroke="#0b7a7c" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="50" cy="48" r="5" fill="#ff6b4a"/>
+          <circle cx="76" cy="22" r="10" fill="#0b7a7c"/>
+          <path d="M72 22 L75 25 L80 19" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-lightTeal text-brand-teal text-xs font-semibold mb-3">
+        <span>🌿 Hito completado</span>
+      </div>
+
+      <h1 class="text-2xl sm:text-[28px] font-bold text-brand-dark leading-snug tracking-tight mb-2">
+        Lo hiciste. 30 días de control.
+      </h1>
+
+      <p class="text-brand-textMuted text-xs leading-relaxed max-w-[320px] mb-6">
+        Una pausa diaria que transformó tu tranquilidad financiera en un reflejo natural.
+      </p>
+
+      <!-- Resumen del camino -->
+      <div class="w-full bg-white rounded-2xl p-5 shadow-sm border border-slate-100 text-left space-y-3">
+        <div class="flex items-center justify-between pb-2 border-b border-slate-100">
+          <span class="text-xs font-bold text-brand-dark">Resumen del camino</span>
+          <span class="px-2 py-0.5 rounded-full bg-brand-lightTeal text-brand-teal text-[11px] font-bold">5 de 5 etapas</span>
+        </div>
+
+        <div class="flex items-center gap-3 p-2 rounded-xl bg-brand-lightTeal/30">
+          <div class="w-6 h-6 rounded-full bg-brand-lightTeal text-brand-teal flex items-center justify-center text-xs font-bold">✓</div>
+          <div>
+            <p class="text-xs font-bold text-brand-dark">30 días completados</p>
+            <p class="text-[11px] text-brand-textMuted">Constancia construida día a día</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-2 rounded-xl bg-brand-lightTeal/30">
+          <div class="w-6 h-6 rounded-full bg-brand-lightTeal text-brand-teal flex items-center justify-center text-xs font-bold">✓</div>
+          <div>
+            <p class="text-xs font-bold text-brand-dark">Hábitos adquiridos</p>
+            <p class="text-[11px] text-brand-textMuted">Atención plena en cada decisión</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-2 rounded-xl bg-brand-lightTeal/30">
+          <div class="w-6 h-6 rounded-full bg-brand-lightTeal text-brand-teal flex items-center justify-center text-xs font-bold">✓</div>
+          <div>
+            <p class="text-xs font-bold text-brand-dark">Gastos que identificaste</p>
+            <p class="text-[11px] text-brand-textMuted">Claridad total sin juicios</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-2 rounded-xl bg-brand-lightTeal/30">
+          <div class="w-6 h-6 rounded-full bg-brand-lightTeal text-brand-teal flex items-center justify-center text-xs font-bold">✓</div>
+          <div>
+            <p class="text-xs font-bold text-brand-dark">Deuda que comenzaste a atacar</p>
+            <p class="text-[11px] text-brand-textMuted">Un plan sereno y sostenible</p>
+          </div>
+        </div>
+
+        <!-- Cita resumen -->
+        <div class="bg-brand-lightTeal/70 rounded-xl p-3 border border-brand-teal/20 text-center">
+          <p class="text-xs italic font-medium text-brand-dark">
+            "Ahora tienes algo que antes no tenías: un sistema para manejar tu dinero."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Final -->
+    <div class="pt-6 pb-4 text-center">
+      <a href="index.html" class="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-brand-coral hover:bg-brand-coralHover text-white font-medium text-base shadow-md transition-all">
+        <span>Mantener mis hábitos</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+      <p class="text-xs text-brand-textMuted mt-3">Tu ritmo, tus reglas. Tu calma continúa mañana.</p>
+    </div>
+  </main>
+</body>
+</html>
