@@ -1,0 +1,130 @@
+3. plan.html (Tu plan de 30 días)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu plan de 30 días - 30 Días Sin Estrés</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Sora', 'sans-serif'] },
+          colors: {
+            brand: {
+              teal: '#0b7a7c',
+              lightTeal: '#e2f7ff',
+              bg: '#f1fbff',
+              coral: '#ff6b4a',
+              coralHover: '#f05b39',
+              dark: '#0f2930',
+              textMuted: '#4a656d'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-bg font-sans min-h-screen text-brand-dark flex justify-center items-start sm:py-8">
+  <main class="w-full max-w-[390px] min-h-screen bg-brand-bg flex flex-col justify-between p-6 pb-20 shadow-sm relative">
+    <div>
+      <!-- Header -->
+      <header class="flex items-center justify-between pb-4 border-b border-slate-200/60 mb-5">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 rounded-full bg-brand-lightTeal flex items-center justify-center text-brand-teal">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <p class="text-xs font-bold tracking-wider uppercase text-brand-dark">30 DÍAS SIN ESTRÉS</p>
+            <p class="text-[11px] text-brand-textMuted">Daily Habits</p>
+          </div>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center text-xs font-semibold">JP</div>
+      </header>
+
+      <!-- Status Header -->
+      <div class="space-y-2 mb-5">
+        <h1 class="text-2xl font-bold text-brand-dark">Tu camino empieza hoy.</h1>
+        <div class="flex items-center gap-2 pt-1">
+          <span class="px-2.5 py-1 rounded-full bg-brand-dark text-white text-xs font-medium">● Día 1 de 30</span>
+          <span class="px-2.5 py-1 rounded-full bg-brand-lightTeal text-brand-teal text-xs font-bold">ETAPA 1: DESPERTAR</span>
+        </div>
+        <!-- Barra de progreso -->
+        <div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden mt-2">
+          <div class="bg-brand-teal h-full w-[3%] rounded-full"></div>
+        </div>
+        <div class="flex justify-between text-[11px] text-brand-textMuted pt-0.5">
+          <span>Inicio</span>
+          <span>Meta: 30 días en calma</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta Acción de Hoy -->
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 mb-5">
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-sm font-bold text-brand-dark flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-brand-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            Acción de hoy
+          </span>
+          <span class="px-2 py-0.5 rounded-md bg-brand-lightTeal text-brand-teal text-xs font-semibold">Paso 1</span>
+        </div>
+
+        <!-- Ilustración / Placeholder visual de calma -->
+        <div class="w-full h-32 bg-gradient-to-r from-teal-50 to-emerald-50 rounded-xl mb-4 flex flex-col items-center justify-center p-3 text-center border border-teal-100">
+          <span class="text-2xl mb-1">☕️ 🌿</span>
+          <p class="text-xs text-brand-teal font-medium">Espacio sin juicios</p>
+        </div>
+
+        <p class="text-xs text-brand-dark leading-relaxed mb-4">
+          Durante los próximos 5 minutos, anota todos los gastos que recuerdes de ayer. No juzgues ninguno. Solo descubre en qué se fue tu dinero.
+        </p>
+
+        <div class="flex items-center gap-2 mb-4">
+          <span class="px-2.5 py-1 rounded-full bg-brand-lightTeal text-brand-teal text-xs font-medium">⏱ 5 minutos</span>
+          <span class="px-2.5 py-1 rounded-full bg-brand-lightTeal text-brand-teal text-xs font-medium">✏️ Cuaderno o notas</span>
+        </div>
+
+        <!-- Notas rápidas -->
+        <div class="bg-brand-lightTeal/30 rounded-xl p-3 border border-brand-teal/20 mb-4">
+          <label class="text-[11px] font-semibold text-brand-teal block mb-1">Tus apuntes rápidos (opcional):</label>
+          <textarea rows="2" placeholder="Ej: Café €2.50, suscripción olvidada €12..." class="w-full bg-transparent text-xs text-brand-dark placeholder-slate-400 focus:outline-none resize-none"></textarea>
+        </div>
+
+        <!-- Botón completar -->
+        <a href="progreso.html" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-brand-coral hover:bg-brand-coralHover text-white font-medium text-sm shadow-md transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          <span>Marcar día como completado</span>
+        </a>
+
+        <div class="text-center pt-3">
+          <a href="progreso.html" class="text-xs text-brand-teal font-semibold hover:underline">Ver mi progreso →</a>
+        </div>
+      </div>
+
+      <!-- Cita inspiradora -->
+      <p class="text-center text-xs italic text-brand-textMuted px-4">
+        "La tranquilidad no es tenerlo todo resuelto, sino saber dónde estás parado hoy."
+      </p>
+    </div>
+
+    <!-- Barra de navegación inferior -->
+    <nav class="fixed bottom-0 left-0 right-0 max-w-[390px] mx-auto bg-white border-t border-slate-100 flex items-center justify-around py-2.5 px-4 shadow-lg">
+      <a href="plan.html" class="flex flex-col items-center text-brand-teal text-[11px] font-semibold">
+        <svg class="w-5 h-5 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        Hoy
+      </a>
+      <a href="progreso.html" class="flex flex-col items-center text-slate-400 hover:text-brand-teal text-[11px]">
+        <svg class="w-5 h-5 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        Progreso
+      </a>
+      <a href="cierre.html" class="flex flex-col items-center text-slate-400 hover:text-brand-teal text-[11px]">
+        <svg class="w-5 h-5 mb-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+        Meta
+      </a>
+    </nav>
+  </main>
+</body>
+</html>
