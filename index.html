@@ -1,109 +1,88 @@
-1. index.html (Bienvenida)
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bienvenida - 30 Días Sin Estrés</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: { sans: ['Sora', 'sans-serif'] },
           colors: {
-            brand: {
-              teal: '#0b7a7c',
-              lightTeal: '#e2f7ff',
-              bg: '#f1fbff',
-              coral: '#ff6b4a',
-              coralHover: '#f05b39',
-              dark: '#0f2930',
-              textMuted: '#4a656d'
-            }
+            tealBrand: '#0b7a7c',
+            coralCTA: '#f06449',
+            coralHover: '#db5339',
+            tealLight: '#e6f5f5',
           }
         }
       }
     }
   </script>
+  <style>
+    body { font-family: 'Sora', sans-serif; background-color: #f0f7f8; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  </style>
 </head>
-<body class="bg-brand-bg font-sans min-h-screen text-brand-dark flex justify-center items-start sm:py-8">
-  <main class="w-full max-w-[390px] min-h-screen bg-brand-bg flex flex-col justify-between p-6 shadow-sm">
-    <!-- Contenido Superior -->
-    <div class="flex flex-col items-center pt-8 text-center">
-      <!-- Logo espiral sereno -->
-      <div class="w-24 h-24 mb-6 relative flex items-center justify-center">
-        <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
-          <circle cx="50" cy="50" r="44" stroke="#cdeeff" stroke-width="4" stroke-dasharray="6 6"/>
-          <circle cx="50" cy="50" r="34" stroke="#0b7a7c" stroke-width="5" stroke-linecap="round"/>
-          <path d="M50 24 A26 26 0 1 0 74 54" stroke="#0b7a7c" stroke-width="5" stroke-linecap="round"/>
-          <path d="M50 36 A14 14 0 1 0 62 52" stroke="#0b7a7c" stroke-width="4" stroke-linecap="round"/>
-          <circle cx="50" cy="48" r="4.5" fill="#ff6b4a"/>
-          <circle cx="76" cy="22" r="8" fill="#0b7a7c"/>
-          <path d="M73 22 L75.5 24.5 L79.5 19.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+<body class="min-h-screen text-slate-800 flex justify-center p-0 sm:py-8 sm:px-4">
+  <main class="w-full max-w-[440px] bg-white sm:rounded-[36px] shadow-2xl flex flex-col justify-between overflow-hidden min-h-screen sm:min-h-[820px] p-6 border border-slate-100">
+    
+    <!-- Encabezado / Logo -->
+    <div class="flex items-center gap-3 pt-4">
+      <div class="w-10 h-10 rounded-2xl bg-tealLight flex items-center justify-center text-tealBrand shadow-sm">
+        <span class="material-symbols-outlined text-2xl">spa</span>
+      </div>
+      <div>
+        <span class="text-xs font-semibold uppercase tracking-wider text-tealBrand block">Programa Guiado</span>
+        <h2 class="text-base font-bold text-slate-900 leading-none">30 Días Sin Estrés</h2>
+      </div>
+    </div>
+
+    <!-- Contenido Central -->
+    <div class="space-y-6 my-auto py-8">
+      <div class="w-20 h-20 rounded-3xl bg-tealLight text-tealBrand flex items-center justify-center mx-auto shadow-inner">
+        <span class="material-symbols-outlined text-4xl">self_improvement</span>
       </div>
 
-      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-lightTeal text-brand-teal text-xs font-semibold mb-4 tracking-wide uppercase">
-        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2L15 8L21 9L17 14L18 20L12 17L6 20L7 14L3 9L9 8L12 2Z"/>
-        </svg>
-        <span>30 Días Sin Estrés</span>
+      <div class="text-center space-y-3">
+        <h1 class="text-2xl font-bold text-slate-900 tracking-tight">Recupera tu calma mental y financiera</h1>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Un ritual guiado de menos de 10 minutos al día. Sin juicios, sin tecnicismos y a tu propio ritmo.
+        </p>
       </div>
 
-      <h1 class="text-2xl sm:text-[28px] font-bold text-brand-dark leading-snug tracking-tight mb-3">
-        Recupera el control de tu dinero en 30 días
-      </h1>
-
-      <p class="text-brand-textMuted text-sm leading-relaxed max-w-[320px] mb-8">
-        No necesitas saber de finanzas. Solo necesitas seguir una acción a la vez.
-      </p>
-
-      <!-- Tarjeta con 3 beneficios -->
-      <div class="w-full bg-white rounded-2xl p-5 shadow-sm border border-slate-100/80 space-y-4 text-left">
-        <div class="flex items-start gap-3.5">
-          <div class="w-7 h-7 rounded-full bg-brand-lightTeal flex items-center justify-center flex-shrink-0 mt-0.5 text-brand-teal">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-          </div>
-          <div>
-            <h2 class="text-sm font-semibold text-brand-dark">Ordena tus gastos</h2>
-            <p class="text-xs text-brand-textMuted">Sin presupuestos complejos ni culpa.</p>
-          </div>
+      <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100 space-y-2.5 text-xs text-slate-600">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-tealBrand text-base">check_circle</span>
+          <span>1 ejercicio práctico por día</span>
         </div>
-
-        <div class="flex items-start gap-3.5 pt-3 border-t border-slate-100">
-          <div class="w-7 h-7 rounded-full bg-brand-lightTeal flex items-center justify-center flex-shrink-0 mt-0.5 text-brand-teal">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-          </div>
-          <div>
-            <h2 class="text-sm font-semibold text-brand-dark">Empieza a atacar tus deudas</h2>
-            <p class="text-xs text-brand-textMuted">Un plan sereno y paso a paso.</p>
-          </div>
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-tealBrand text-base">check_circle</span>
+          <span>Acceso ilimitado de por vida</span>
         </div>
-
-        <div class="flex items-start gap-3.5 pt-3 border-t border-slate-100">
-          <div class="w-7 h-7 rounded-full bg-brand-lightTeal flex items-center justify-center flex-shrink-0 mt-0.5 text-brand-teal">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-          </div>
-          <div>
-            <h2 class="text-sm font-semibold text-brand-dark">Construye mejores hábitos</h2>
-            <p class="text-xs text-brand-textMuted">Micro-acciones que perduran en el tiempo.</p>
-          </div>
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-tealBrand text-base">check_circle</span>
+          <span>Garantía incondicional de 7 días</span>
         </div>
       </div>
     </div>
 
-    <!-- CTA Inferior -->
-    <div class="pt-8 pb-4 text-center">
-      <a href="situacion.html" class="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-brand-coral hover:bg-brand-coralHover text-white font-medium text-base shadow-md transition-all active:scale-[0.99]">
-        <span>Crear mi plan de 30 días</span>
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+    <!-- Botón Conectado a checkout.html -->
+    <div class="space-y-3 pb-2">
+      <a href="checkout.html" class="w-full py-4 px-6 rounded-2xl bg-coralCTA hover:bg-coralHover text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-coralCTA/25 transition-transform active:scale-[0.98]">
+        <span>Comenzar ahora por solo $7 USD</span>
+        <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </a>
-      <p class="text-xs text-brand-textMuted mt-3">⏱ 5 minutos al día • A tu propio ritmo</p>
+      <p class="text-[11px] text-center text-slate-400">Pago único seguro • Sin suscripciones mensuales</p>
     </div>
+
   </main>
 </body>
 </html>
