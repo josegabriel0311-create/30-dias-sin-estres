@@ -1,0 +1,9 @@
+4. vercel.json (Archivo de configuración para Vercel)
+Coloca este archivo en la misma raíz para que las URLs funcionen limpias (/checkout, /gracias):
+
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/checkout", "destination": "/checkout.html" },
+    { "source": "/gracias", "destination": "/gracias.html" }
+  ]
