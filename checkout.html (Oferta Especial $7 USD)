@@ -1,0 +1,104 @@
+2. checkout.html (Oferta Especial $7 USD)
+Enlaces conectados:
+
+Flecha de regreso (arrow_back) → Vuelve a index.html.
+Botón principal coral → Conecta con la pasarela segura de Hotmart (https://pay.hotmart.com/). (Cuando generes tu producto en Hotmart, solo completas el código al final de la URL si lo deseas).
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta Especial $7 USD - 30 Días Sin Estrés</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Sora', 'sans-serif'] },
+          colors: {
+            tealBrand: '#0b7a7c',
+            coralCTA: '#f06449',
+            coralHover: '#db5339',
+            tealLight: '#e6f5f5',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Sora', sans-serif; background-color: #f0f7f8; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  </style>
+</head>
+<body class="min-h-screen text-slate-800 flex justify-center p-0 sm:py-8 sm:px-4">
+  <main class="w-full max-w-[440px] bg-white sm:rounded-[36px] shadow-2xl flex flex-col justify-between overflow-hidden min-h-screen sm:min-h-[820px] p-6 border border-slate-100">
+    
+    <!-- Barra Superior con Retorno a index.html -->
+    <header class="flex items-center justify-between border-b border-slate-100 pb-4">
+      <a href="index.html" class="w-9 h-9 rounded-full bg-slate-50 flex items-center justify-center text-slate-600 hover:text-tealBrand hover:bg-tealLight transition-colors">
+        <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+      </a>
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Pago Seguro SSL</span>
+      <div class="w-9"></div>
+    </header>
+
+    <!-- Resumen de Oferta -->
+    <div class="space-y-6 my-auto py-4">
+      <div class="text-center space-y-2">
+        <span class="inline-block px-3 py-1 rounded-full bg-tealLight text-tealBrand text-xs font-bold uppercase tracking-wider">Acceso Completo</span>
+        <h1 class="text-2xl font-bold text-slate-900 tracking-tight">Tu pase a 30 Días Sin Estrés</h1>
+      </div>
+
+      <div class="bg-gradient-to-br from-tealBrand to-[#085f60] text-white rounded-3xl p-6 shadow-md relative overflow-hidden">
+        <div class="flex justify-between items-baseline border-b border-teal-400/30 pb-4 mb-4">
+          <div>
+            <h3 class="text-base font-bold">Programa Completo</h3>
+            <span class="text-xs text-teal-100">Pago único • Acceso de por vida</span>
+          </div>
+          <div class="text-right">
+            <span class="text-3xl font-extrabold">$7.00</span>
+            <span class="text-xs text-teal-200 block uppercase">USD</span>
+          </div>
+        </div>
+
+        <ul class="space-y-2.5 text-xs text-teal-50">
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm text-teal-200">check</span>
+            30 lecciones guiadas de calma y hábitos
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm text-teal-200">check</span>
+            Plantillas y ejercicios prácticos de 10 min
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm text-teal-200">check</span>
+            Garantía incondicional de 7 días
+          </li>
+        </ul>
+      </div>
+
+      <!-- Garantía 7 Días -->
+      <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-amber-50/80 border border-amber-200/60 text-xs text-amber-900">
+        <span class="material-symbols-outlined text-amber-600 text-2xl flex-shrink-0">verified_user</span>
+        <span><strong>Cero riesgo:</strong> Si no experimentas mayor tranquilidad en tus primeros 7 días, recibes el 100% de tu dinero de vuelta.</span>
+      </div>
+    </div>
+
+    <!-- Botón CTA a Pasarela de Hotmart -->
+    <div class="space-y-3 pt-2">
+      <a href="https://pay.hotmart.com/" target="_blank" rel="noopener noreferrer" class="w-full py-4 px-6 rounded-2xl bg-coralCTA hover:bg-coralHover text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-coralCTA/25 transition-transform active:scale-[0.98]">
+        <span class="material-symbols-outlined text-lg">lock</span>
+        <span>Proceder al pago seguro de $7 USD</span>
+      </a>
+      <p class="text-[11px] text-center text-slate-400">Procesado con encriptación bancaria de 256 bits en Hotmart</p>
+    </div>
+
+  </main>
+</body>
+</html>
