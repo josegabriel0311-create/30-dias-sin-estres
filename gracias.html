@@ -1,0 +1,243 @@
+📄 Archivo: gracias.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Gracias por tu compra! - 30 Días Sin Estrés</title>
+  
+  <!-- Tipografía Sora & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Sora', 'sans-serif'],
+          },
+          colors: {
+            tealBrand: '#0b7a7c',
+            tealDark: '#085f60',
+            tealLight: '#e6f5f5',
+            coralCTA: '#f06449',
+            coralHover: '#db5339',
+            surfaceBg: '#f7fafc',
+            cardBg: '#ffffff',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Sora', sans-serif;
+      background-color: #f0f7f8;
+      -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .soft-shadow {
+      box-shadow: 0 10px 30px -5px rgba(11, 122, 124, 0.08);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen text-slate-800 flex justify-center p-0 sm:py-8 sm:px-4">
+
+  <!-- Contenedor móvil centrado (Máximo 440px para emular app en desktop o full-width en móvil) -->
+  <main class="w-full max-w-[440px] bg-white sm:rounded-[36px] shadow-2xl flex flex-col overflow-hidden min-h-screen sm:min-h-0 border border-slate-100/80">
+    
+    <!-- Barra Superior / Header de Marca -->
+    <header class="w-full px-6 pt-7 pb-4 flex items-center justify-between border-b border-slate-100 bg-white">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-tealLight flex items-center justify-center text-tealBrand shadow-sm border border-tealBrand/10">
+          <span class="material-symbols-outlined text-[22px]">spa</span>
+        </div>
+        <span class="font-bold text-slate-900 tracking-tight text-base">30 Días Sin Estrés</span>
+      </div>
+      <a href="mailto:soporte@30diassinestres.com" title="Soporte" class="w-9 h-9 rounded-full bg-slate-50 flex items-center justify-center text-slate-500 hover:text-tealBrand hover:bg-tealLight transition-colors">
+        <span class="material-symbols-outlined text-[20px]">help_outline</span>
+      </a>
+    </header>
+
+    <!-- Contenido Scrollable -->
+    <div class="flex-1 px-5 py-6 overflow-y-auto space-y-6">
+
+      <!-- Badge de Estado de Compra -->
+      <div class="flex flex-col items-center text-center pt-2">
+        <div class="relative mb-3">
+          <div class="w-16 h-16 rounded-full bg-tealLight flex items-center justify-center text-tealBrand ring-8 ring-tealLight/50">
+            <span class="material-symbols-outlined text-3xl">check_circle</span>
+          </div>
+          <span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-coralCTA text-white flex items-center justify-center shadow-sm">
+            <span class="material-symbols-outlined text-[14px]">local_florist</span>
+          </span>
+        </div>
+
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold tracking-wide mb-3 border border-emerald-200/60">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Pago Aprobado con Éxito
+        </div>
+
+        <h1 class="text-2xl font-bold text-slate-900 tracking-tight mb-2">¡Felicidades y bienvenido/a!</h1>
+        <p class="text-sm text-slate-600 leading-relaxed px-2">
+          Tu compra de <span class="font-semibold text-slate-900">$7.00 USD</span> fue exitosa. Has dado el primer paso hacia una relación más serena con tus hábitos y tu dinero.
+        </p>
+      </div>
+
+      <!-- Tarjeta de Refugio / Mensaje de Paz -->
+      <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-tealBrand to-tealDark p-5 text-white shadow-md">
+        <div class="absolute -right-4 -bottom-6 opacity-10 pointer-events-none">
+          <span class="material-symbols-outlined text-9xl">energy_savings_leaf</span>
+        </div>
+        <div class="flex items-center gap-2 mb-2 text-teal-100 text-xs font-medium uppercase tracking-wider">
+          <span class="material-symbols-outlined text-[16px]">verified</span>
+          Tu espacio seguro está activo
+        </div>
+        <p class="text-xs text-teal-50/90 leading-relaxed">
+          Recuerda: no hay prisa ni metas imposibles. El programa está diseñado para adaptarse a tus días reales en menos de 10 minutos diarios.
+        </p>
+      </div>
+
+      <!-- Recibo / Detalle del Acceso -->
+      <div class="bg-slate-50/90 rounded-2xl p-4 border border-slate-200/70 space-y-3">
+        <div class="flex justify-between items-start border-b border-slate-200/60 pb-3">
+          <div>
+            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block">Detalle del Producto</span>
+            <span class="text-sm font-bold text-slate-800">30 Días Sin Estrés</span>
+            <span class="text-xs text-tealBrand block font-medium">Acceso Completo de por Vida</span>
+          </div>
+          <div class="text-right">
+            <span class="text-lg font-bold text-slate-900">$7.00</span>
+            <span class="text-[11px] text-slate-500 block uppercase">USD</span>
+          </div>
+        </div>
+
+        <div class="space-y-2 text-xs text-slate-600 pt-1">
+          <div class="flex items-center justify-between">
+            <span class="flex items-center gap-1.5 text-slate-500">
+              <span class="material-symbols-outlined text-[16px]">mail</span> Enviado al correo:
+            </span>
+            <span class="font-medium text-slate-800" id="buyerEmail">Tu correo registrado</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="flex items-center gap-1.5 text-slate-500">
+              <span class="material-symbols-outlined text-[16px]">receipt_long</span> Plataforma:
+            </span>
+            <span class="inline-block px-2 py-0.5 rounded bg-tealLight text-tealBrand font-medium text-[11px]">
+              Hotmart Seguro
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Guía de 3 Pasos para Empezar -->
+      <div class="space-y-3 pt-1">
+        <div class="flex items-center justify-between">
+          <h2 class="text-sm font-bold text-slate-900">3 pasos sencillos para entrar</h2>
+          <span class="text-[11px] text-tealBrand font-medium bg-tealLight px-2 py-0.5 rounded-full">Toma 1 min</span>
+        </div>
+
+        <!-- Paso 1 -->
+        <div class="flex gap-3.5 p-3.5 rounded-2xl bg-white border border-slate-100 soft-shadow">
+          <div class="w-8 h-8 rounded-full bg-tealLight text-tealBrand font-bold text-sm flex items-center justify-center flex-shrink-0">
+            1
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Revisa tu bandeja de entrada</h3>
+            <p class="text-[11px] text-slate-500 leading-snug mt-0.5">
+              Busca el correo de <strong>Hotmart</strong> con el asunto: <em>'Tu compra ha sido aprobada'</em>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="flex gap-3.5 p-3.5 rounded-2xl bg-white border border-slate-100 soft-shadow">
+          <div class="w-8 h-8 rounded-full bg-tealLight text-tealBrand font-bold text-sm flex items-center justify-center flex-shrink-0">
+            2
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Crea tu contraseña segura</h3>
+            <p class="text-[11px] text-slate-500 leading-snug mt-0.5">
+              Toca el botón <strong>'Acceder a mi contenido'</strong> dentro del email y define tu clave en 10 segundos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="flex gap-3.5 p-3.5 rounded-2xl bg-white border border-slate-100 soft-shadow">
+          <div class="w-8 h-8 rounded-full bg-tealLight text-tealBrand font-bold text-sm flex items-center justify-center flex-shrink-0">
+            3
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Empieza con el Día 1</h3>
+            <p class="text-[11px] text-slate-500 leading-snug mt-0.5">
+              Entra a tu primer ritual desde tu navegador móvil o descarga la app <strong>Hotmart Sparkle</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón de Llamada a la Acción (CTA Principal Coral) -->
+      <div class="pt-2 space-y-3">
+        <!-- Reemplaza el href con el enlace a tu Hotmart Club o a la pantalla index.html de tu app -->
+        <a href="https://consumer.hotmart.com" target="_blank" rel="noopener noreferrer" 
+           class="w-full py-4 px-6 rounded-2xl bg-coralCTA hover:bg-coralHover text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-coralCTA/25 transition-transform active:scale-[0.98]">
+          <span>Ir directamente a mi contenido</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+
+        <div class="text-center">
+          <a href="mailto:soporte@30diassinestres.com?subject=Ayuda%20con%20mi%20acceso%2030%20D%C3%ADas%20Sin%20Estr%C3%A9s" 
+             class="text-xs font-medium text-slate-500 hover:text-tealBrand transition-colors inline-flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">mail</span>
+            ¿No recibiste el correo? Escríbenos para ayudarte
+          </a>
+        </div>
+      </div>
+
+      <!-- Bloque de Garantía y Confianza -->
+      <div class="bg-tealLight/60 rounded-2xl p-4 border border-tealBrand/10 space-y-3">
+        <div class="flex items-start gap-2.5">
+          <div class="w-7 h-7 rounded-lg bg-tealBrand/10 text-tealBrand flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[18px]">verified_user</span>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-slate-900">Garantía Incondicional de 7 Días</h4>
+            <p class="text-[11px] text-slate-600 leading-relaxed mt-0.5">
+              Explora el método con total serenidad. Si en los primeros 7 días sientes que no aporta paz a tu vida, te devolvemos el 100% de tu dinero con un solo clic.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-tealBrand/10 pt-2 text-[11px] text-slate-500 flex flex-col gap-1">
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[14px] text-tealBrand">contact_support</span>
+            <span>Soporte: <strong class="text-slate-700">soporte@30diassinestres.com</strong></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer de Seguridad -->
+    <footer class="p-4 bg-slate-50 text-center border-t border-slate-100">
+      <div class="inline-flex items-center gap-1 text-[11px] text-slate-400">
+        <span class="material-symbols-outlined text-[13px]">lock</span>
+        <span>Compra procesada de forma segura mediante encriptación SSL</span>
+      </div>
+      <p class="text-[10px] text-slate-400 mt-0.5">30 Días Sin Estrés • Bienestar Financiero Cotidiano</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
