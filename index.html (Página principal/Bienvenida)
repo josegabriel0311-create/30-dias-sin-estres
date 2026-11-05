@@ -79,7 +79,7 @@ Enlace conectado: El botón de acción redirige a checkout.html.
 
     <!-- Botón Conectado a checkout.html -->
     <div class="space-y-3 pb-2">
-      <a href="checkout.html" class="w-full py-4 px-6 rounded-2xl bg-coralCTA hover:bg-coralHover text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-coralCTA/25 transition-transform active:scale-[0.98]">
+      <a href="https://pay.hotmart.com/V108269744D" class="w-full py-4 px-6 rounded-2xl bg-coralCTA hover:bg-coralHover text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-coralCTA/25 transition-transform active:scale-[0.98]">
         <span>Comenzar ahora por solo $7 USD</span>
         <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </a>
